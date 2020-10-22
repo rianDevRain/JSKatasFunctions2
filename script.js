@@ -41,7 +41,7 @@ const fibonacci = (n) => {
 		return 1;
 	} else {
 		let [answer, f1, f2] = [0, 0, 1];
-		for (let i = 0; i < n; i++) {
+		for (let i = 1; i < n; i++) {
 			answer = f2;
 			f2 = add(f1, f2);
 			f1 = answer;
