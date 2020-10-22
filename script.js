@@ -2,33 +2,27 @@
 
 const add = (x, y) => x + y;
 
-// document.write(add(2, 4));
+
 
 const multiply = (adder, looper) => {
-	// debugger;
 	let answer = 0;
 	for (let i = 0; i < looper; i++) {
 		answer = add(adder, answer);
 	}
 	return answer;
 };
-const checkMulti = multiply;
-console.log(checkMulti(6, 4));
+
 
 const power = (x, n) => {
-	// debugger;
 	let answer = 1;
 	for (let i = 0; i < n; i++) {
-		// console.log()
+		
 		answer = multiply(x, answer);
 	}
 	return answer;
 };
 
-// const checkOne = power(2,8);
-// const checkTwo = power(3,4);
-// console.log(checkOne);
-// console.log(checkTwo);
+
 
 const factorial = (n) => {
 	let answer = n;
@@ -38,7 +32,7 @@ const factorial = (n) => {
 	return answer;
 };
 
-// console.log(factorial(5));
+
 
 const fibonacci = (n) => {
 	if (n == 0) {
@@ -48,7 +42,6 @@ const fibonacci = (n) => {
 	} else {
 		let [answer, f1, f2] = [0, 0, 1];
 		for (let i = 0; i < n; i++) {
-			// debugger;
 			answer = f2;
 			f2 = add(f1, f2);
 			f1 = answer;
