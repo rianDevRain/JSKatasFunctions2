@@ -12,8 +12,8 @@ const multiply = (adder, looper) => {
 	}
 	return answer;
 };
-// const checkMulti = multiply;
-// console.log(checkMulti(6, 4));
+const checkMulti = multiply;
+console.log(checkMulti(6, 4));
 
 const power = (x, n) => {
 	// debugger;
@@ -25,7 +25,7 @@ const power = (x, n) => {
 	return answer;
 };
 
-// const checkOne = power(2,6);
+// const checkOne = power(2,8);
 // const checkTwo = power(3,4);
 // console.log(checkOne);
 // console.log(checkTwo);
@@ -48,7 +48,7 @@ const fibonacci = (n) => {
 	} else {
 		let [answer, f1, f2] = [0, 0, 1];
 		for (let i = 0; i < n; i++) {
-			debugger;
+			// debugger;
 			answer = f2;
 			f2 = add(f1, f2);
 			f1 = answer;
